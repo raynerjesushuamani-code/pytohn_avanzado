@@ -62,3 +62,9 @@ lambda a,b: a+b
  suma=lambda a,b: a+b 
  suma(3,6)
  ```
+ ## documentacion
+ python nos permite documenar una funcion co el objetivo de xlpicar mejor determinas zonas de nuestro codigo  para esto uzamos una cadena de texto  despues de la definicion de una funcion a esta cadena que recibe los datos de salida 
+ defsresta(a,b)
+ """
+ 
+ ""
