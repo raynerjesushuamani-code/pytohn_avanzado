@@ -43,3 +43,22 @@ suma(34,45)# en este casoo estoy llamdolo a la funcion como argumento los dato
 def login(usuario=" pasword"==)
 
 ```
+## las funciones anonimas lambda 
+ las funcioens tienen las siguientes propiedades se escriben en una unica sentencia (lineal) 
+ 2 no tiene nombre (anonima)
+ 3 su cuerpo conlleva un `return` implicito 
+ 4 puede recibir cualquier numero de parametro 
+
+ la estructura para definir una funcion landa es la siguiente:
+ 1 escribir la palabra  reservada `lambda ` 
+ 2 especificar la cantida de parametros 
+ 3 luego indicar los datos de retorno 
+ 4 >[TIP] puesto qeue sta funcion es anonima para ejecutarla debemos almacenar la funcion en una variable
+ ```python
+lambda a,b: a+b 
+ 
+ ``` 
+ ```python
+ suma=lambda a,b: a+b 
+ suma(3,6)
+ ```
