@@ -64,12 +64,13 @@ lambda a,b: a+b
  ```
  ## dOCUMENTACION
 python nos permite documentar una funcion con el objetivo de explicar mejor determinadas zonas de nuestro codigo, para esto uzamos una cadena de texto despues de la difinicion de una funcion, a esta cadena de texrto se le conoce como docstring y esta delimitado por triples comillas """aqui el texto"""
-```python
+
 def suma(a,b):
     """
     funcion para realizar la suma de dos numeros
     """
 # los docstring tambien nos permite explixcvar los parametros que recibe los datos de salida
+```python
 def resta(a,b):
     """
     a= un numero entero.
@@ -78,9 +79,30 @@ def resta(a,b):
     retronara un dato entero <int> positivo
     """
     return a-b
-    ```
+```
+
 [!WARNING] en el proceso de documentacion tener en cuenta de incluir a lop menos lo siguiente: 
 1. breve explicacion sobre que hace la funcion 
-2.especificaciones y caracteristicas de los parametros incluyendo sus tipos . 
+2. especificaciones y caracteristicas de los parametros incluyendo sus tipos . 
 3. restricciones de la funcion. 
 4. el valor que retorna y sus caracteristicas
+
+## type this 
+nos permite inidcar que tiposnde datos recibira una variablr parametro y el valor de retorno de una funcion 
+para utilizarlos debemos indicar el tipo de datos despues del separador `:` en eñ caso del valor del retorno usaremos `->` luego el tipo de dato y finalmente el separador `:` que inidca el incio del bloque de codigo de la funcion 
+las `anotaciones de tipo ` son una herramientas que nos permite complementar la documentacion de nuestro codigo
+**tenemos los siguinentes**
+**simple**
+- int-> numeros enteros
+- float ->numeros decimales
+- boll -> datos veerdad o falso
+- str-> dato de tipo texto
+- lis-> listas`[]`
+- tuple-> tuplas`()`
+ - dic-> diccionarios`{}`
+
+**compuesto**
+existe casos en los que necesitamos mas expresividad en la *anotacion de tipos* ¿ que ocurre si queremos indicar una *lista de cadenas* o un *conjuntos de neteros*.?
+- -list[str]-> lista cadna de textos
+- list[in]-> lista de numeros enteros
+- dict[str,float]-> diccionario donde las claves son cadenas de texto y los valores son flotantes/decimales 
