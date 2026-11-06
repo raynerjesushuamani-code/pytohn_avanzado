@@ -57,14 +57,30 @@ def login(usuario=" pasword"==)
  ```python
 lambda a,b: a+b 
  
- ``` 
+ 
  ```python
  suma=lambda a,b: a+b 
  suma(3,6)
  ```
- ## documentacion
- python nos permite documenar una funcion co el objetivo de xlpicar mejor determinas zonas de nuestro codigo  para esto uzamos una cadena de texto  despues de la definicion de una funcion a esta cadena que recibe los datos de salida 
- defsresta(a,b)
- """
- 
- ""
+ ## dOCUMENTACION
+python nos permite documentar una funcion con el objetivo de explicar mejor determinadas zonas de nuestro codigo, para esto uzamos una cadena de texto despues de la difinicion de una funcion, a esta cadena de texrto se le conoce como docstring y esta delimitado por triples comillas """aqui el texto"""
+```python
+def suma(a,b):
+    """
+    funcion para realizar la suma de dos numeros
+    """
+# los docstring tambien nos permite explixcvar los parametros que recibe los datos de salida
+def resta(a,b):
+    """
+    a= un numero entero.
+    b= un numero entero.
+    en ambos casos a,b deben recibir valores menores 0.
+    retronara un dato entero <int> positivo
+    """
+    return a-b
+    ```
+[!WARNING] en el proceso de documentacion tener en cuenta de incluir a lop menos lo siguiente: 
+1. breve explicacion sobre que hace la funcion 
+2.especificaciones y caracteristicas de los parametros incluyendo sus tipos . 
+3. restricciones de la funcion. 
+4. el valor que retorna y sus caracteristicas
