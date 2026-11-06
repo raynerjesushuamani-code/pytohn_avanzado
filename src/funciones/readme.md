@@ -105,4 +105,11 @@ las `anotaciones de tipo ` son una herramientas que nos permite complementar la 
 existe casos en los que necesitamos mas expresividad en la *anotacion de tipos* ¿ que ocurre si queremos indicar una *lista de cadenas* o un *conjuntos de neteros*.?
 - -list[str]-> lista cadna de textos
 - list[in]-> lista de numeros enteros
-- dict[str,float]-> diccionario donde las claves son cadenas de texto y los valores son flotantes/decimales 
+- dict[str,float]-> diccionario donde las claves son cadenas de texto y los valores son flotantes/decimales
+
+**multiples**
+en el caso que queramos indicar  que un determinado parametro ser de un `tipo o otro` tenemos que especificarlo usando el operador `|`
+- tuple|dict -> puede sert dato de tipo tupla o diccionarios 
+- list [str|int] -> lista cuyos elementos pueden ser cadena de texto o enteros 
+- dict[str|int,float|int] -> 
+
